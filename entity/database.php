@@ -8,9 +8,6 @@ class DatabaseManager
 
     public function saveUser(object $user):void
     {
-//        $json = json_encode($user);
-//        file_put_contents(self::$db, $json, FILE_APPEND );
-
         $lineBreak = PHP_EOL;
         $json = json_encode($user);
         $data = file_get_contents(self::$db);
