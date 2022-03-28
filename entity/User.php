@@ -9,7 +9,7 @@ class User
     public string $email;
     public string $name;
     private static $salt = 'salt';
-//    public static $db = 'db.json';
+
 
     function __construct($request){
         $this->login = $request['login'];
@@ -18,37 +18,12 @@ class User
         $this->name = $request['name'];
     }
 
-    /**
-     * @return string
-     */
-    public function getLogin(): string
-    {
-        return $this->login;
-    }
-
-    /**
-     * @param string $login
-     */
-    public function setLogin(string $login): self
-    {
-        $this->login = $login;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPassword(): string
-    {
-        return $this->password;
-    }
-
+    
     /**
      * @param string $password
      */
     public function setPassword(string $password): void
     {
-//        $password = $this->hashPassword($password);
         $this->password = $password;
     }
 
@@ -89,18 +64,5 @@ class User
         return $this->password = hash('sha1',self::$salt . $this->password);
     }
 
-//    public function registration():void
-//    {
-//        $lineBreak = PHP_EOL;
-//        $json = json_encode($this);
-//        $data = file_get_contents('db.json');
-//        $selector = empty($data) ? "[{$json}]" : ",{$lineBreak}{$json}]";
-//        echo $selector;
-//        $fileHandler = fopen('db.json', "c");
-//        fseek($fileHandler, -1, SEEK_END);
-//        fwrite($fileHandler, $selector);
-//        fclose($fileHandler);
-//        echo 'sadfads';
-//
-//    }
+
 }
