@@ -1,9 +1,9 @@
 <?php
 //header('Content-Type: application/json');
 
-include_once $_SERVER['DOCUMENT_ROOT'] . '/ManaoTest/entity/User.php';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/ManaoTest/class/Validate.php';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/ManaoTest/entity/database.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/App/entity/User.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/App/class/Validate.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/App/entity/database.php';
 use App\User;
 use App\FormValidate;
 use App\DatabaseManager;
