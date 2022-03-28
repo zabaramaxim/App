@@ -1,11 +1,11 @@
 <?php
-namespace App; //include_once $_SERVER['DOCUMENT_ROOT'] . '/entity/database.php';
+namespace App; 
 use App\DatabaseManager;
 class FormValidate
 {
-    public function validateRegistrationForm($request, DatabaseManager $dbManager):array {
+    public function validateRegistrationForm($request, DatabaseManager $dbManager):array 
+    {
         $errors = [];
-//        $dbManager = new DatabaseManager();
 
         if (empty($request['login'])){
             $errors[]['login'] = 'Enter your login';
