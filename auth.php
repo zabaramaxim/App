@@ -1,9 +1,9 @@
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'] . '/ManaoTest/entity/User.php';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/ManaoTest/class/Validate.php';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/ManaoTest/entity/database.php';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/ManaoTest/class/Authorization.php';
-//use App\User;
+include_once $_SERVER['DOCUMENT_ROOT'] . '/App/entity/User.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/App/class/Validate.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/App/entity/database.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/App/class/Authorization.php';
+
 use App\Authorization;
 use App\FormValidate;
 use App\DatabaseManager;
