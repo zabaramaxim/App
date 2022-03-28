@@ -1,7 +1,7 @@
 <?php
 use App\DatabaseManager;
 include 'registration.php';
-include_once $_SERVER['DOCUMENT_ROOT'] . '/ManaoTest/entity/database.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/App/entity/database.php';
 if (isset($_COOKIE['user']) && isset($_COOKIE['hash'])){
     session_start();
     $_SESSION['user'] = $_COOKIE['user'];
