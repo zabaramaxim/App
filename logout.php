@@ -1,5 +1,5 @@
 <?php
-//use App\DatabaseManager;
+
 session_start();
 unset($_SESSION['user']);
 session_destroy();
